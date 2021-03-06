@@ -15,7 +15,7 @@ public class TestMain {
         main = new Main();
         assertEquals(0,main.sub(1,1));
     }
-    //new coment
+    //new comment
     //new comment at campus
     //new commit : another
 }
