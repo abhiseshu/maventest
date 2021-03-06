@@ -13,7 +13,7 @@ public class TestMain {
     @Test
     public void testSub(){
         main = new Main();
-        assertEquals(1,main.sub(1,1));
+        assertEquals(0,main.sub(1,1));
     }
     //new coment
 }
