@@ -1,18 +1,13 @@
-//import org.junit.Test;
-//
-//import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestMain {
-    static Main main;
+    Main main;
 
-
-    public static void main(String []args){
-        System.out.println("Hellon");
-
-    }
-
-    public static void testAdd(){
+    @Test
+    public void testAdd(){
         main = new Main();
-        System.out.println(main.add(1,2));
+        assertEquals(2,main.add(1,1));
     }
 }
