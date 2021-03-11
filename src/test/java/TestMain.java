@@ -14,15 +14,15 @@ public class TestMain {
 
     @Test
     public void testAdd(){
-        assertEquals(2,main.add(1,1));
+        assertEquals(7,main.add(2,5));
     }
     @Test
     public void testSub(){
-        assertEquals(0,main.sub(1,1));
+        assertEquals(-1,main.sub(6,7));
     }
     @Test
     public void testMult(){
-        assertEquals(2,main.mult(1,2));
+        assertEquals(0,main.mult(0,2));
     }
     @Test
     public void testDiv(){

@@ -1,8 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 public class TestMainIntegration {
     Main main;
@@ -13,30 +12,51 @@ public class TestMainIntegration {
     }
 
     @Test
-    public void testAdd(){
-        assertEquals(2,main.add(1,1));
+    public void TestohangeInResultwithAdd()
+    {
+        int default_result_value = 0;
+        assertEquals(default_result_value,main.getResult());
+        int first_num = 2;
+        int seound_num = 1;
+        int expAddResult =  3;
+        assertEquals(expAddResult,main.add(first_num,seound_num));
+        int newExpResultVal = 3;
+        assertEquals(newExpResultVal,main.getResult());
     }
     @Test
-    public void testSub(){
-        assertEquals(0,main.sub(1,1));
+    public void TestohangeInResultwithsubtrat()
+    {
+        int default_result_value = 0;
+        assertEquals(default_result_value,main.getResult());
+        int first_num = 3;
+        int seound_num = 1;
+        int expAddResult =  2;
+        assertEquals(expAddResult,main.sub(first_num,seound_num));
+        int newExpResultVal = 2;
+        assertEquals(newExpResultVal,main.getResult());
     }
     @Test
-    public void testMult(){
-        assertEquals(2,main.mult(1,2));
+    public void TestohangeInResultwithmulti()
+    {
+        int default_result_value = 0;
+        assertEquals(default_result_value,main.getResult());
+        int first_num = 3;
+        int seound_num = 1;
+        int expAddResult =  3;
+        assertEquals(expAddResult,main.mult(first_num,seound_num));
+        int newExpResultVal = 3;
+        assertEquals(newExpResultVal,main.getResult());
     }
     @Test
-    public void testDiv(){
-        assertEquals(3,main.div(10,3));
+    public void TestohangeInResultwithdiv()
+    {
+        int default_result_value = 0;
+        assertEquals(default_result_value,main.getResult());
+        int first_num = 3;
+        int seound_num = 1;
+        int expAddResult =  3;
+        assertEquals(expAddResult,main.div(first_num,seound_num));
+        int newExpResultVal = 3;
+        assertEquals(newExpResultVal,main.getResult());
     }
-
-    @Test
-    public void testgetResult(){
-
-        assertNotEquals(null,main.getResult());
-    }
-    @Test
-    public void testClear(){
-        assertEquals(0,main.clear());
-    }
-
 }
