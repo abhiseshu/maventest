@@ -60,4 +60,14 @@ public class TestMainIntegration {
         int newExpResultVal = 3;
         assertEquals(newExpResultVal,main.getResult());
     }
+    @Test
+    public void TestohangeInResultwithclear()
+    {
+        int default_result_value = 0;
+        assertEquals(default_result_value,main.getResult());
+        int expAddResult =  0;
+        assertEquals(expAddResult,main.clear());
+        int newExpResultVal = 0;
+        assertEquals(newExpResultVal,main.getResult());
+    }
 }
