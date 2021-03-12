@@ -5,7 +5,7 @@ public class Main {
     Main(){
         result = 0;
     }
-
+// add method
     public int add(int a,int b){
         result = a+b;
         return result;
